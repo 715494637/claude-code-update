@@ -1,0 +1,30 @@
+[project]
+name = "claude-code-sync"
+version = "1.0.0"
+description = "Claude Code 版本自动同步项目"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [
+    { name = "op要喝op果奶" }
+]
+
+dependencies = [
+    "aiohttp>=3.13.0",
+    "tqdm>=4.67.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "black>=24.0.0",
+    "ruff>=0.1.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
